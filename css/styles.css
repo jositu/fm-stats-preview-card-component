@@ -1,0 +1,84 @@
+@import url('normalize.css');
+
+:root {
+    --color--bg: hsl(233, 47%, 7%);
+    --color--card: hsl(244, 38%, 16%);
+    --color--accent: hsl(277, 64%, 61%);
+    --color--heading: hsl(0, 0%, 100%);
+    --color--paragraph: hsla(0, 0%, 100%, 0.75);
+    --color--stat-heading: hsla(0, 0%, 100%, 0.6);
+    --font-size: 15px;
+}
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Lexend Deca', sans-serif; */
+
+body {
+
+}
+
+h1, .stats__number {
+    font-family: 'Inter', sans-serif;
+    color: var(--color--heading);
+}
+
+em {
+    color: var(--color--accent);
+    font-style: normal;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--color--paragraph);
+    font-size: var(--font-size);
+}
+
+.stats__heading {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--color--stat-heading);
+    text-transform: uppercase;
+}
+
+/* Layout */
+
+main {
+    background-color: var(--color--bg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Card */
+
+.card {
+    background-color: var(--color--card);
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+picture {
+    background-color: var(--color--accent);
+}
+
+picture > img {
+    width: 100%;
+    display: block;
+    mix-blend-mode: multiply;
+}
+
+/* Stats */
+
+/* Attribution */
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
